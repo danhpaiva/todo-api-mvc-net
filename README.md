@@ -1,2 +1,66 @@
-# todo-api-mvc-net
-Todo API AspNet MVC
+<h1 align="center"> 🖳 TodoApi Rest 🖳</h1>
+
+<p align="center">
+ <a href="#status">Status</a> • 
+ <a href="#objective">Objetivo</a> •
+ <a href="#installation">Desenvolvimento</a> • 
+ <a href="#technology">Tecnologias</a> • 
+ <a href="#author">Autor</a> • 
+ <a href="#licence">Licença</a>
+</p>
+
+<h2 align="center" id=status> 
+	⌛ Concluído ⌛
+</h2>
+
+<h2 id=objective>📜 Sobre</h2>
+Criacao de uma API simples no modelo Restfull em .Net + EntityFramework. <br>
+O modelo de dados esta simples porque o foco esta em abstrair alguns conhecimentos.
+
+<h2 id=installation>✔️ Instalacao</h2>
+
+Você precisa ter o Visual Studio 2022 ou VsCode instalado para testar o projeto.</br>
+O projeto roda sob o SDK .Net 8.
+
+Rode o projeto e acesse a URL:
+
+~~~
+https://localhost:7181/swagger/index.html
+~~~
+
+Clique no metodo Post, e cole esse modelo de retorno de dados:
+
+~~~
+{
+  "name": "Estudar Arquitetura Hexagonal",
+  "isComplete": true
+}
+~~~
+
+Voce recebera um json semelhante a este:
+
+~~~
+{
+  "id": 1,
+  "name": "Estudar Arquitetura Hexagonal",
+  "isComplete": true
+}
+~~~
+
+
+<h2 id=technology>🧰 Tecnologias</h2>
+
+As seguintes tecnologias foram utilizadas neste projeto:
+
+- IDE: <a href="https://visualstudio.microsoft.com/pt-br/vs/">Visual Studio 2022</a>
+- SDK: <a href="https://dotnet.microsoft.com/pt-br/download/dotnet/8.0">.Net 8</a>
+- EntityFrameworkCore: <a href="https://www.nuget.org/packages/microsoft.entityframeworkcore.inmemory">Microsoft.EntityFrameworkCore.InMemory</a>
+  
+<h2 id=author>😎 Autor</h2>
+
+Developed by <a href="https://www.linkedin.com/in/danhpaiva/" target="_blank">Daniel Paiva</a>
+
+<h2 id=licence>🆓 Licença</h2>
+
+Este projeto está sob a licença
+<a href="https://github.com/danhpaiva/todo-api-mvc-net/blob/main/LICENSE" target="_blank">MIT</a>
