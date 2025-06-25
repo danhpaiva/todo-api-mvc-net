@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using TodoApi.Context;
 using TodoApi.Models;
@@ -16,7 +17,6 @@ namespace TodoApi.Controllers
             _context = context;
         }
 
-        // GET: api/TodoItems
         [HttpGet]
         public async Task<ActionResult<IEnumerable<TodoItemDTO>>> GetTodoItems()
         {
@@ -25,8 +25,6 @@ namespace TodoApi.Controllers
                 .ToListAsync();
         }
 
-        // GET: api/TodoItems/5
-        // <snippet_GetByID>
         [HttpGet("{id}")]
         public async Task<ActionResult<TodoItemDTO>> GetTodoItem(long id)
         {
@@ -39,11 +37,7 @@ namespace TodoApi.Controllers
 
             return ItemToDTO(todoItem);
         }
-        // </snippet_GetByID>
 
-        // PUT: api/TodoItems/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        // <snippet_Update>
         [HttpPut("{id}")]
         public async Task<IActionResult> PutTodoItem(long id, TodoItemDTO todoDTO)
         {
@@ -72,11 +66,7 @@ namespace TodoApi.Controllers
 
             return NoContent();
         }
-        // </snippet_Update>
 
-        // POST: api/TodoItems
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        // <snippet_Create>
         [HttpPost]
         public async Task<ActionResult<TodoItemDTO>> PostTodoItem(TodoItemDTO todoDTO)
         {
@@ -94,9 +84,8 @@ namespace TodoApi.Controllers
                 new { id = todoItem.Id },
                 ItemToDTO(todoItem));
         }
-        // </snippet_Create>
 
-        // DELETE: api/TodoItems/5
+        [Authorize(Roles = "Admin", Policy = "CanDelete")]
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteTodoItem(long id)
         {
