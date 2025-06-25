@@ -1,6 +1,14 @@
 <h1 align="center"> 🖳 TodoApi Rest 🖳</h1>
 
 <p align="center">
+    <img src="https://github.com/danhpaiva/books-api-graphql/blob/documentacao/screen/api_01.png?raw=true" width="600" alt="TodoApi">
+</p>
+
+<p align="center">
+    <img src="https://github.com/danhpaiva/books-api-graphql/blob/documentacao/screen/api_02.png?raw=true" width="600" alt="Testes Unitarios">
+</p>
+
+<p align="center">
  <a href="#status">Status</a> • 
  <a href="#objective">Objetivo</a> •
  <a href="#installation">Desenvolvimento</a> • 
@@ -27,6 +35,27 @@ Rode o projeto e acesse a URL:
 ~~~
 https://localhost:7181/swagger/index.html
 ~~~
+
+#### Autenticacao
+
+Para autenticar, acesse a url: 
+
+~~~
+https://localhost:7181/api/Auth/login
+~~~
+
+e use o JSON:
+
+~~~
+{
+  "username": "admin",
+  "password": "senhaforte"
+}
+~~~
+
+O Token expira depois de 30 minutos.
+
+#### Post
 
 Clique no metodo Post, e cole esse modelo de retorno de dados:
 
