@@ -53,8 +53,11 @@ Voce recebera um json semelhante a este:
 As seguintes tecnologias foram utilizadas neste projeto:
 
 - IDE: <a href="https://visualstudio.microsoft.com/pt-br/vs/">Visual Studio 2022</a>
-- SDK: <a href="https://dotnet.microsoft.com/pt-br/download/dotnet/8.0">.Net 8</a>
+- SDK: <a href="https://dotnet.microsoft.com/pt-br/download/dotnet/9.0">.Net 9</a>
 - EntityFrameworkCore: <a href="https://www.nuget.org/packages/microsoft.entityframeworkcore.inmemory">Microsoft.EntityFrameworkCore.InMemory</a>
+- Autenticacao e Autorizacao: <a href="https://www.nuget.org/packages/Microsoft.AspNetCore.Authentication.JwtBearer">Microsoft.AspNetCore.Authentication.JwtBearer</a>
+- Autenticacao e Autorizacao: <a href="https://www.nuget.org/packages/microsoft.identitymodel.tokens/">Microsoft.IdentityModel.Tokens</a>
+- Autenticacao e Autorizacao: <a href="https://www.nuget.org/packages/system.identitymodel.tokens.jwt/">System.IdentityModel.Tokens.Jwt</a>
   
 <h2 id=author>😎 Autor</h2>
 
