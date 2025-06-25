@@ -20,7 +20,7 @@ O modelo de dados esta simples porque o foco esta em abstrair alguns conheciment
 <h2 id=installation>✔️ Instalacao</h2>
 
 Você precisa ter o Visual Studio 2022 ou VsCode instalado para testar o projeto.</br>
-O projeto roda sob o SDK .Net 8.
+O projeto roda sob o SDK .Net 9.
 
 Rode o projeto e acesse a URL:
 
@@ -58,6 +58,7 @@ As seguintes tecnologias foram utilizadas neste projeto:
 - Autenticacao e Autorizacao: <a href="https://www.nuget.org/packages/Microsoft.AspNetCore.Authentication.JwtBearer">Microsoft.AspNetCore.Authentication.JwtBearer</a>
 - Autenticacao e Autorizacao: <a href="https://www.nuget.org/packages/microsoft.identitymodel.tokens/">Microsoft.IdentityModel.Tokens</a>
 - Autenticacao e Autorizacao: <a href="https://www.nuget.org/packages/system.identitymodel.tokens.jwt/">System.IdentityModel.Tokens.Jwt</a>
+- Testes Unitarios: <a href="https://www.nuget.org/packages/xunit">xUnit</a>
   
 <h2 id=author>😎 Autor</h2>
 
