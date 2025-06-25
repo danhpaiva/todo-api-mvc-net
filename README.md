@@ -20,7 +20,7 @@ O modelo de dados esta simples porque o foco esta em abstrair alguns conheciment
 <h2 id=installation>✔️ Instalacao</h2>
 
 Você precisa ter o Visual Studio 2022 ou VsCode instalado para testar o projeto.</br>
-O projeto roda sob o SDK .Net 8.
+O projeto roda sob o SDK .Net 9.
 
 Rode o projeto e acesse a URL:
 
