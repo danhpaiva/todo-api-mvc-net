@@ -1,11 +1,11 @@
 <h1 align="center"> 🖳 TodoApi Rest 🖳</h1>
 
 <p align="center">
-    <img src="https://github.com/danhpaiva/todo-api-mvc-net/blob/main/screen/api_01.png?raw=true" width="600" alt="TodoApi">
+    <img src="https://i.ibb.co/mFrdnvG7/api-01.png?raw=true" width="600" alt="TodoApi">
 </p>
 
 <p align="center">
-    <img src="https://github.com/danhpaiva/todo-api-mvc-net/blob/main/screen/api_02.png?raw=true" width="600" alt="Testes Unitarios">
+    <img src="https://i.ibb.co/8DtkbQLG/api-02.png?raw=true" width="600" alt="Testes Unitarios">
 </p>
 
 <p align="center">
